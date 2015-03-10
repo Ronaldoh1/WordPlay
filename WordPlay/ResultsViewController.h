@@ -10,4 +10,7 @@
 
 @interface ResultsViewController : UIViewController
 
+@property (nonatomic) NSString *resultName;
+@property (nonatomic) NSString *resultAdjective;
+
 @end

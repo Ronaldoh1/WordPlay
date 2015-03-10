@@ -20,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    
     
     
 }
@@ -31,6 +33,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender{
     ResultsViewController *viewController = segue.destinationViewController;
+
+    viewController.resultAdjective = self.adjectiveTextField.text;
+    viewController.resultName = self.name;
 
 
 }

@@ -26,7 +26,7 @@
 {
     EnterAdjectiveViewController *viewController = segue.destinationViewController;
     
-    viewController.title = self.nameTextField.text;
+    viewController.name = self.nameTextField.text;
     
     
 }
