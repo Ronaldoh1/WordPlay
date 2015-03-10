@@ -21,14 +21,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
 
+    if ([self.nameTextField.text isEqualToString:@""]) {
+        self.nameTextField.text = @"Please enter a name";
+
+        return NO;
+    } else{
+        return YES;
+    }
+
+}
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender
 {
+
+
     EnterAdjectiveViewController *viewController = segue.destinationViewController;
     
     viewController.name = self.nameTextField.text;
-    
+
     
 }
 - (IBAction)unwindToRoot:(UIStoryboardSegue *)sender{
