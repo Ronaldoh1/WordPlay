@@ -14,6 +14,9 @@
 		F238AB411AAF9FE8005C4D87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F238AB401AAF9FE8005C4D87 /* Images.xcassets */; };
 		F238AB441AAF9FE8005C4D87 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F238AB421AAF9FE8005C4D87 /* LaunchScreen.xib */; };
 		F238AB501AAF9FE8005C4D87 /* WordPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F238AB4F1AAF9FE8005C4D87 /* WordPlayTests.m */; };
+		F238AB5B1AAFA0EA005C4D87 /* EnterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F238AB5A1AAFA0EA005C4D87 /* EnterNameViewController.m */; };
+		F238AB5E1AAFA181005C4D87 /* EnterAdjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F238AB5D1AAFA181005C4D87 /* EnterAdjectiveViewController.m */; };
+		F238AB611AAFA257005C4D87 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F238AB601AAFA257005C4D87 /* ResultsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		F238AB491AAF9FE8005C4D87 /* WordPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F238AB4E1AAF9FE8005C4D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F238AB4F1AAF9FE8005C4D87 /* WordPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordPlayTests.m; sourceTree = "<group>"; };
+		F238AB591AAFA0EA005C4D87 /* EnterNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterNameViewController.h; sourceTree = "<group>"; };
+		F238AB5A1AAFA0EA005C4D87 /* EnterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterNameViewController.m; sourceTree = "<group>"; };
+		F238AB5C1AAFA181005C4D87 /* EnterAdjectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterAdjectiveViewController.h; sourceTree = "<group>"; };
+		F238AB5D1AAFA181005C4D87 /* EnterAdjectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterAdjectiveViewController.m; sourceTree = "<group>"; };
+		F238AB5F1AAFA257005C4D87 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		F238AB601AAFA257005C4D87 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +94,13 @@
 				F238AB381AAF9FE8005C4D87 /* AppDelegate.m */,
 				F238AB3A1AAF9FE8005C4D87 /* ViewController.h */,
 				F238AB3B1AAF9FE8005C4D87 /* ViewController.m */,
+				F238AB591AAFA0EA005C4D87 /* EnterNameViewController.h */,
+				F238AB5A1AAFA0EA005C4D87 /* EnterNameViewController.m */,
 				F238AB3D1AAF9FE8005C4D87 /* Main.storyboard */,
+				F238AB5F1AAFA257005C4D87 /* ResultsViewController.h */,
+				F238AB601AAFA257005C4D87 /* ResultsViewController.m */,
+				F238AB5C1AAFA181005C4D87 /* EnterAdjectiveViewController.h */,
+				F238AB5D1AAFA181005C4D87 /* EnterAdjectiveViewController.m */,
 				F238AB401AAF9FE8005C4D87 /* Images.xcassets */,
 				F238AB421AAF9FE8005C4D87 /* LaunchScreen.xib */,
 				F238AB331AAF9FE8005C4D87 /* Supporting Files */,
@@ -221,6 +236,9 @@
 			files = (
 				F238AB3C1AAF9FE8005C4D87 /* ViewController.m in Sources */,
 				F238AB391AAF9FE8005C4D87 /* AppDelegate.m in Sources */,
+				F238AB5E1AAFA181005C4D87 /* EnterAdjectiveViewController.m in Sources */,
+				F238AB611AAFA257005C4D87 /* ResultsViewController.m in Sources */,
+				F238AB5B1AAFA0EA005C4D87 /* EnterNameViewController.m in Sources */,
 				F238AB361AAF9FE8005C4D87 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
