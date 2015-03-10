@@ -8,6 +8,7 @@
 
 #import "EnterNameViewController.h"
 #import "EnterAdjectiveViewController.h"
+#import "ResultsViewController.h"
 
 @interface EnterNameViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
@@ -29,6 +30,13 @@
     viewController.name = self.nameTextField.text;
     
     
+}
+- (IBAction)unwindToRoot:(UIStoryboardSegue *)sender{
+    ResultsViewController *resultViewController = sender.sourceViewController;
+    NSLog(@"itworked");
+
+
+
 }
 
 
