@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.resultsTextView.text = [NSString stringWithFormat:@"%@ likes to wear %@ pants", self.resultName, self.resultAdjective];
+    self.resultsTextView.text = [NSString stringWithFormat:@"%@ likes to wear %@ pants and likes to %@ %@",self.name, self.adjective, self.verb, self.adverb];
 
 }
 

@@ -1,57 +1,52 @@
 //
-//  EnterAdjectiveViewController.m
+//  VerbViewController.m
 //  WordPlay
 //
 //  Created by Ronald Hernandez on 3/10/15.
 //  Copyright (c) 2015 Ron. All rights reserved.
 //
 
-#import "EnterAdjectiveViewController.h"
-
 #import "VerbViewController.h"
+#import "AdverbViewController.h"
 
-@interface EnterAdjectiveViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *adjectiveTextField;
-
+@interface VerbViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *verbText;
 
 @end
 
-@implementation EnterAdjectiveViewController
+@implementation VerbViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
-    
-
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
 
-    if ([self.adjectiveTextField.text isEqualToString:@""]) {
-        self.adjectiveTextField.placeholder = @"Please enter an adjective";
+    if ([self.verbText.text isEqualToString:@""]) {
+        self.verbText.placeholder = @"Please enter a verb";
 
         return NO;
     } else{
         return YES;
     }
-    
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender{
-    VerbViewController *viewController = segue.destinationViewController;
+    AdverbViewController *viewController = segue.destinationViewController;
 
-    viewController.adjective = self.adjectiveTextField.text;
+    viewController.adjective = self.adjective;
     viewController.name = self.name;
-
-
+    viewController.verb = self.verbText.text;
+    
+    
 }
+
+
+
 @end

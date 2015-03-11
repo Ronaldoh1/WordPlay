@@ -24,7 +24,7 @@
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
 
     if ([self.nameTextField.text isEqualToString:@""]) {
-        self.nameTextField.text = @"Please enter a name";
+        self.nameTextField.placeholder = @"Please enter a name";
 
         return NO;
     } else{
